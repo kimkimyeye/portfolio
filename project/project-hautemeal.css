@@ -1,0 +1,246 @@
+@charset "UTF-8";
+p strong {
+  box-shadow: inset 0 -10px 0 #f6e0b4;
+}
+
+::selection {
+  background-color: #f6e0b4;
+}
+
+/****** Project ******/
+.project {
+  height: 560px;
+  border-bottom: 1px solid #000;
+}
+.project .contents {
+  overflow: hidden;
+  background-color: #f6e0b4;
+  margin: 0;
+  padding-bottom: 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.project .main-title {
+  padding-top: 80px;
+}
+.project .contents .mobile-img {
+  height: 500px;
+}
+.project .contents .hautemeal-logo {
+  padding-bottom: 30px;
+}
+.project .contents .project-title {
+  font-size: var(--font-xl);
+  font-weight: var(--weight-md);
+}
+/****** Overview ******/
+.overview .main-title {
+  padding-top: 80px;
+}
+.overview .contents {
+  padding-top: 80px;
+}
+.overview .overview-list {
+  padding-top: 30px;
+  display: grid;
+  grid-template: 1fr 1fr / 70px 1fr;
+  gap: 10px;
+}
+.overview .overview-list h4 {
+  font-weight: var(--weight-sm);
+}
+/****** 과정 ******/
+.process .process-wrapper {
+  font-size: var(--font-sm);
+  line-height: var(--lineHeight-lg);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.process .process-wrapper .process-list .line {
+  position: relative;
+  height: 1px;
+  background-color: #000;
+  /* width: 100%; */
+  display: block;
+}
+.process .process-wrapper .process-list .line::before {
+  content: "";
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.process .process-wrapper .process-list .arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -6px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid #000;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.process .process-wrapper .process-list ul {
+  padding-top: 10px;
+}
+/****** 역할 ******/
+.part li {
+  line-height: var(--lineHeight-lg);
+}
+.part .ps-contents {
+  padding-bottom: 40px;
+}
+.part .ps-contents:last-child {
+  padding-bottom: 0;
+}
+/****** UX vision ******/
+.ux-vision h4 {
+  padding-top: 10px;
+  font-size: var(--font-lg);
+}
+/****** Design ******/
+.design .design-contents {
+  padding-bottom: 120px;
+}
+.design .design-contents .keyword {
+  display: flex;
+  gap: 60px;
+}
+.design .design-contents .keyword-list {
+  background-color: #f6e0b4;
+  padding: 6px 10px;
+  font-size: var(--font-xl);
+  font-weight: var(--weight-lg);
+}
+.design .design-contents .color-palette {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100px;
+  text-align: center;
+}
+.design .design-contents .color-palette li {
+  display: grid;
+  place-items: center;
+}
+.design .design-contents .color-palette li:first-child {
+  background-color: #4e3836;
+  color: #fff;
+}
+.design .design-contents .color-palette li:nth-child(2) {
+  background-color: #bca37f;
+}
+.design .design-contents .color-palette li:nth-child(3) {
+  background-color: #f6e0b4;
+}
+.design .design-contents .color-palette li:nth-child(4) {
+  background-color: #5f9c67;
+}
+
+/* typography */
+.design .design-contents .typography-list {
+  display: flex;
+  padding: 40px 0;
+}
+
+.design .design-contents .typography-list .abhaya {
+  /* 이거 폰트 스타일 추가해서 바꾸기 */
+  font-family: "Cardo", Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+.design .design-contents .typography-list .pretendard {
+  font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.design .design-contents .typography-list .pretendard::after {
+  content: "/";
+  font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  padding: 0 10px;
+  font-weight: 400;
+}
+
+.design .design-contents .typography-list2 li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 400px;
+  white-space: nowrap;
+}
+.design .design-contents .typography-list2 li:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
+}
+.design .design-contents .typography-list2 li:nth-child(2) {
+  font-size: 18px;
+  font-weight: 600;
+}
+.design .design-contents .typography-list2 li:nth-child(3) {
+  font-size: 16px;
+}
+.design .design-contents .typography-list2 li:nth-child(4) {
+  font-size: 14px;
+}
+.design .design-contents:last-child {
+  padding-bottom: 0;
+}
+
+/****** Prototype ******/
+/* .prototype .contents {
+  position: relative;
+  height: 100%;
+}
+
+.prototype .contents {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/****** Review ******/
+.review .ps-contents {
+  padding-bottom: 60px;
+}
+.review .ps-contents:nth-child(3) {
+  padding-bottom: 0px;
+}
+
+.view-site-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 120px 0 60px;
+}

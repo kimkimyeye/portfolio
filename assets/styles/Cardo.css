@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Cardo";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: local("Cardo Regular"), url(../fonts/Cardo-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Cardo";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: local("Cardo Bold"), url(../fonts/Cardo-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Cardo";
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+  src: local("Cardo Italic"), url(../fonts/Cardo-Regular.woff2) format("woff2");
+}
